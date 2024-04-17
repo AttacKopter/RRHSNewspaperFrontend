@@ -1,1 +1,1 @@
-# rrhsnewsstandfrontend
+RRHSNewsstandFrontend
