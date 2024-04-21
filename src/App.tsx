@@ -1,9 +1,12 @@
-import './App.css'
+import "./styles.scss";
+import Banner from "./Banner";
+import DayComponent from "./DayComponent";
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Banner />
+      <DayComponent />
     </>
   )
 }
