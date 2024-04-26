@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react"
 
-function DayComponent() { 
-  const [currentDay, setCurrentDay] = useState("A")
+function DayComponent() {
+    const [currentDay, setCurrentDay] = useState("A");
+
+    useEffect(() => {
+        setCurrentDay("A");
+    }, []);
+
 
   return (
     <>
