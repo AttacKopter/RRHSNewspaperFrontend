@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <Banner />
+        <div>testing</div>
       <DayComponent />
     </>
   )
