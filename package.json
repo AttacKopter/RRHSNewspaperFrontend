@@ -5,7 +5,7 @@
   "description": "Frontend for the RRHS Newstand a revitalized news outlet for Reagan IB students",
   "type": "module",
   "scripts": {
-    "dev-dev": "vite --clearScreen false",
+    "dev-dev": "vite --port 80 --host --clearScreen false",
     "dev-server": "nodemon ./src/index.ts",
     "test": "jest",
     "test-watch": "npm run test -- --watchAll",
