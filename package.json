@@ -5,8 +5,9 @@
   "description": "Frontend for the RRHS Newstand a revitalized news outlet for Reagan IB students",
   "type": "module",
   "scripts": {
-    "dev-dev": "vite --port 80 --host --clearScreen false",
-    "dev-server": "nodemon ./src/index.ts",
+    "client": "vite --port 4000 --host --clearScreen false",
+    "server": "nodemon ./src/index.ts",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "jest",
     "test-watch": "npm run test -- --watchAll",
     "build": "tsc && vite build",
@@ -18,6 +19,7 @@
     "url": "git+https://github.com/AttacKopter/RRHSNewsstandFrontend.git"
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "react": "^18.2.0",
