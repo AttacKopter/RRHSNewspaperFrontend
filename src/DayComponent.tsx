@@ -4,7 +4,7 @@ function DayComponent() {
     const [currentDay, setCurrentDay] = useState("A");
 
     useEffect(() => {
-        setCurrentDay("A");
+        setCurrentDay("B");
     }, []);
 
 
