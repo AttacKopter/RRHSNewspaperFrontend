@@ -1,10 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import dotenv from 'dotenv'
-
-dotenv.config()
-
-console.log(process.env.VITE_SSL_KEY)
+import { fileURLToPath, URL } from "node:url";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,8 +10,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 4000,
     https: {
-      key: process.env.VITE_SSL_KEY,
-      cert: process.env.VITE_SSL_CERT,
+      key: '~/privkey.pem',
+      cert: '~/fullchain.pem',
     },
     hmr: {
       overlay: false,
